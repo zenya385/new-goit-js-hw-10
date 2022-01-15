@@ -5,7 +5,6 @@ export default function fetchCountries(country) {
     if (!r.ok) {
       throw new Error(r.status);
     }
-    console.log(r.status);
-    return response.json();
+    return r.json();
   });
 }
